@@ -44,6 +44,15 @@ body {
   }
 }
 
+.section2 {
+  color: black;
+  position: relative;
+  left: 0;
+  bottom: -100vh;
+  width: 1200px;
+  margin: 0 auto;
+}
+
 h1 {
   font-size: 6rem;
 }
@@ -354,6 +363,97 @@ button {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 75em) {
+  .auction {
+    width: 1000px;
+  }
+}
+@media screen and (max-width: 64em) {
+  .auction {
+    width: 700px;
+  }
+}
+@media screen and (max-width: 48em) {
+  .auction {
+    width: 500px;
+  }
+}
+@media screen and (max-width: 40em) {
+  .auction {
+    width: 100%;
+    padding-inline: 2rem;
+  }
+}
+.auction--header {
+  text-align: center;
+}
+.auction--grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(25rem, 1fr));
+  gap: 5rem;
+}
+@media screen and (max-width: 75em) {
+  .auction--grid {
+    grid-template-columns: repeat(4, minmax(20rem, 1fr));
+    gap: 2rem;
+  }
+}
+@media screen and (max-width: 64em) {
+  .auction--grid {
+    grid-template-columns: repeat(3, minmax(20rem, 1fr));
+    gap: 2rem;
+  }
+}
+@media screen and (max-width: 48em) {
+  .auction--grid {
+    grid-template-columns: repeat(2, minmax(20rem, 1fr));
+  }
+}
+@media screen and (max-width: 40em) {
+  .auction--grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.auction--grid img {
+  width: 100%;
+}
+.auction--product {
+  position: relative;
+}
+@media screen and (max-width: 40em) {
+  .auction--product {
+    width: 100%;
+  }
+}
+.auction--product-content {
+  width: 90%;
+  margin: 0 auto;
+}
+.auction--product-info {
+  margin-block-start: 3rem;
+}
+.auction--product__category {
+  display: flex;
+  justify-content: space-between;
+  margin-block-start: 1rem;
+}
+.auction--product::after {
+  content: "$95";
+  font-size: 2rem;
+  position: absolute;
+  top: 10px;
+  left: 0;
+  background-color: #f37121;
+  padding: 2.5rem;
+  border-radius: 50%;
+}
+.auction--submit {
+  background: #f8f9fa;
+  padding: 1.5rem 2rem;
+  font-size: 1.6rem;
+  margin-block-start: 2rem;
 }
 
 /*# sourceMappingURL=style.css.map */

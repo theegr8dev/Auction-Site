@@ -1,0 +1,95 @@
+.auction {
+    // border: 1px solid red;
+
+    @media screen and (max-width:$xl) {
+        width: 1000px;
+    }
+
+    @media screen and (max-width:$l) {
+        width: 700px;
+    }
+
+    @media screen and (max-width:$m) {
+        width: 500px;
+    }
+
+    @media screen and (max-width:$s) {
+        width: 100%;
+        padding-inline: 2rem;
+    }
+
+    &--header {
+        text-align: center;
+    }
+
+    &--grid {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(25rem, 1fr));
+        gap: 5rem;
+
+        @media screen and (max-width:$xl) {
+            grid-template-columns: repeat(4, minmax(20rem, 1fr));
+            gap: 2rem;
+        }
+
+        @media screen and (max-width:$l) {
+            grid-template-columns: repeat(3, minmax(20rem, 1fr));
+            gap: 2rem;
+        }
+
+        @media screen and (max-width:$m) {
+            grid-template-columns: repeat(2, minmax(20rem, 1fr));
+        }
+
+        @media screen and (max-width:$s) {
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+
+    &--product {
+        position: relative;
+
+
+        @media screen and (max-width:$s) {
+            width: 100%;
+        }
+
+        &-content {
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        &-info {
+            margin-block-start: 3rem;
+
+        }
+
+        &__category {
+            display: flex;
+            justify-content: space-between;
+            margin-block-start: 1rem;
+        }
+    }
+
+    &--product::after {
+        content: '$95';
+        font-size: 2rem;
+        position: absolute;
+        top: 10px;
+        left: 0;
+        background-color: $color-orange;
+        padding: 2.5rem;
+        border-radius: 50%;
+    }
+
+    &--submit {
+        background: #f8f9fa;
+        padding: 1.5rem 2rem;
+        font-size: 1.6rem;
+        margin-block-start: 2rem;
+    }
+}
