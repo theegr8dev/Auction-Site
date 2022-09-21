@@ -8,8 +8,58 @@
 
 html {
     font-size: 62.5%;
+    height: 100%;
 }
 
 body {
     font-family: 'Open Sans', sans-serif;
+    position: relative;
+}
+
+.container {
+    width: 100%;
+    position: relative;
+    // border: 5px solid red;
+    // height: 100vh;
+
+
+    @media screen and (max-width:$xl) {
+        // border: 3px solid red;
+
+    }
+
+    @media screen and (max-width:$l) {
+        // border: 3px solid yellow;
+    }
+
+    @media screen and (max-width:$m) {
+        // border: 3px solid pink;
+    }
+
+    @media screen and (max-width:$s) {
+        // border: 3px solid green;
+    }
+}
+
+.section1 {
+    max-width: 1200px;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+
+    @media screen and (max-width:$xl) {
+        max-width: 1000px;
+    }
+
+    @media screen and (max-width:$l) {
+        max-width: 750px;
+    }
+
+    @media screen and (max-width:$m) {
+        max-width: 600px;
+
+    }
+
 }

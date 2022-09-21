@@ -1,0 +1,42 @@
+.header {
+    text-align: center;
+    margin: 20rem auto;
+    color: $color-primary-white;
+
+
+    &__content {
+        width: 100%;
+
+        &--title {
+            width: 60rem;
+            margin: 0 auto;
+            color: $color-primary-white;
+
+
+            @media screen and (max-width:$l) {
+                width: 60%;
+            }
+
+            @media screen and (max-width:$m) {
+                width: 90%;
+            }
+
+            @media screen and (max-width:$s) {
+                width: 100%;
+            }
+
+        }
+
+        &--paragraph {
+            font-weight: 400;
+            width: 90%;
+            margin: 0 auto;
+        }
+    }
+
+    &--btn {
+        padding: 2rem 4rem;
+        margin-block: 2rem;
+        margin-inline: 10rem;
+    }
+}

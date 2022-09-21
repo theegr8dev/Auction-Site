@@ -1,0 +1,73 @@
+.toggle {
+    position: relative;
+
+
+
+    &--icon {
+        position: absolute;
+        top: 47px;
+        right: 0;
+
+        @media screen and (max-width:$m) {
+            display: block;
+            margin-inline-end: 2rem;
+
+        }
+    }
+
+    &--icon,
+    &--icon::before,
+    &--icon::after {
+        display: none;
+        content: '';
+        background-color: white;
+        height: 3px;
+        width: 20px;
+
+        @media screen and (max-width:$l) {
+            display: block;
+        }
+    }
+
+    &--icon::before {
+        content: '';
+        position: absolute;
+        top: 5px;
+    }
+
+    &--icon::after {
+        content: '';
+        position: absolute;
+        bottom: 5px;
+    }
+
+    // Cancel
+    &--cancel {
+        display: none;
+        position: relative;
+        transform: rotate(130deg);
+    }
+
+    &--cancel,
+    &--cancel::after {
+        content: '';
+        background-color: black;
+        height: 3px;
+        width: 20px;
+
+        @media screen and (max-width:$l) {
+            display: none;
+            z-index: 10;
+        }
+    }
+
+
+
+    &--cancel::after {
+        content: '';
+        position: absolute;
+        transform: rotate(100deg);
+
+    }
+
+}
