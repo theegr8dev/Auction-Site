@@ -12,58 +12,58 @@
 <body>
     <div class="container">
         <div class="bg"></div>
-        <section class=" section1">
-        <nav class="nav">
-            <div class="nav__brand">
-                <img src="assets/logo.png" alt="logo" class="nav__brand--icon">
-            </div>
-            
-            <ul class="nav--list">
-                <li class="nav--item">
-                    <a href="#" class="nav--link">Home</a>
-                </li>
-                <li class="nav--item">
-                    <a href="#" class="nav--link">Buy</a>
-                </li>
-                <li class="nav--item">
-                    <a href="#" class="nav--link">Sell</a>
-                </li>
-                <li class="nav--item">
-                    <a href="#" class="nav--link">Services</a>
-                </li>
-                <li class="nav--item">
-                    <a href="#" class="nav--link">Blog</a>
-                </li>
-                <li class="nav--item">
-                    <a href="#" class="nav--link">About</a>
-                </li>
-                <li class="nav--item">
-                    <a href="#" class="nav--link">Contact</a>
-                </li>
-            </ul>
-            <div class="nav--auth">
-                <a href="#">Sign In/</a>
-                <a href="#">Register</a>
-            </div>
-            <div class="toogle">
-                <div class="toggle--icon"></div>
-                <div class="toggle--cancel"></div>
+        <section  id="section1">
+            <nav class="nav">
+                <div class="nav__brand">
+                    <img src="assets/logo.png" alt="logo" class="nav__brand--icon">
+                </div>
                 
-            </div>
-        </nav>
-        <header class="header">
-            <div class="header__content cnt">
-                <h1 class="header__content--title">The Best Place to Buy and Sell</h1>
-                <h3 class="header__content--paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. At, quam!</h3>
-            </div>
-            <button class=" header--btn btn--sm">Register</button>
-        </header>
+                <ul class="nav--list">
+                    <li class="nav--item">
+                        <a href="#" class="nav--link">Home</a>
+                    </li>
+                    <li class="nav--item">
+                        <a href="#" class="nav--link">Buy</a>
+                    </li>
+                    <li class="nav--item">
+                        <a href="#" class="nav--link">Sell</a>
+                    </li>
+                    <li class="nav--item">
+                        <a href="#" class="nav--link">Services</a>
+                    </li>
+                    <li class="nav--item">
+                        <a href="#" class="nav--link">Blog</a>
+                    </li>
+                    <li class="nav--item">
+                        <a href="#" class="nav--link">About</a>
+                    </li>
+                    <li class="nav--item">
+                        <a href="#" class="nav--link">Contact</a>
+                    </li>
+                </ul>
+                <div class="nav--auth">
+                    <a href="#">Sign In/</a>
+                    <a href="#">Register</a>
+                </div>
+                <div class="toogle">
+                    <div class="toggle--icon"></div>
+                    <div class="toggle--cancel"></div>
+                    
+                </div>
+            </nav>
+            <header class="header">
+                <div class="header__content cnt">
+                    <h1 class="header__content--title">The Best Place to Buy and Sell</h1>
+                    <h3 class="header__content--paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. At, quam!</h3>
+                </div>
+                <button class=" header--btn btn--sm">Register</button>
+            </header>
         </section>
 
-        <section class="section2 auction">
+        <section class="auction" id="section2">
             <div class="auction--header">
-                <span class="auction--header__title">AUCTIONS</span>
-                <h2 class="auction--header__paragraph">Current Auctions</h2>
+                <span class="auction--header__title section__title">AUCTIONS</span>
+                <h2 class="auction--header__paragraph section__header">Current <span class="section__span">Auctions</span> </h2>
             </div>
             <div class="auction--grid">
                 <div class="auction--product">
@@ -180,6 +180,100 @@
             </div>
         </section>
 
+        <section class="how" id="section3">
+            <div class="how--head">
+                <span class="how--head__title section__title">HOW?</span>
+                <h2 class="how--head__header section__header">How <span class="section__span"> It Works </span></h2>
+            </div>
+            <div class="how-section">
+                <div class="step">
+                    <div class="step--top">
+                    <div class="step--icon-container">
+
+                        <svg class="step--icon">
+                            <use href="assets/sprites.svg#icon-user"></use>
+                        </svg>
+                    </div>
+                        <svg class="step--right-icon">
+                            <use href="assets/sprites.svg#icon-arrow_forward_ios"></use>
+                        </svg>
+    
+                    </div>
+                    <div class="step--content">
+                        <h3 class="step--header">
+                            Register
+                        </h3>
+                        <span class="step--paragraph">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed consequatur quaerat magnam sequi nobis ut et iure.
+                        </span>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step--top">
+                        <div class="step--icon-container">
+                        <svg class="step--icon">
+                            <use href="assets/sprites.svg#icon-credit-card"></use>
+                        </svg>
+                        </div>
+                        <svg class="step--right-icon">
+                            <use href="assets/sprites.svg#icon-arrow_forward_ios"></use>
+                        </svg>
+
+                    </div>
+                    <div class="step--content">
+                        <h3 class="step--header">
+                            Buy or Bid
+                        </h3>
+                        <span class="step--paragraph">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed consequatur quaerat magnam sequi nobis ut et iure.
+                        </span>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step--top">
+                        <div class="step--icon-container">    
+                        <svg class="step--icon">
+                            <use href="assets/sprites.svg#icon-glass2"></use>
+                        </svg>
+                        </div>
+                        <svg class="step--right-icon">
+                            <use href="assets/sprites.svg#icon-arrow_forward_ios"></use>
+                        </svg>
+
+                    </div>
+                    <div class="step--content">
+                        <h3 class="step--header">
+                            Submit a bid
+                        </h3>
+                        <span class="step--paragraph">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed consequatur quaerat magnam sequi nobis ut et iure.
+                        </span>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step--top">
+                        <div class="step--icon-container">
+                            <svg class="step--icon">
+                                <use href="assets/sprites.svg#icon-trophy"></use>
+                            </svg>
+                        </div>
+                        <svg class="step--right-icon">
+                            <use href="assets/sprites.svg#icon-arrow_forward_ios"></use>
+                        </svg>
+
+                    </div>
+                    <div class="step--content">
+                        <h3 class="step--header">
+                            Win
+                        </h3>
+                        <span class="step--paragraph">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed consequatur quaerat magnam sequi nobis ut et iure.
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <footer class="footer">
             <div class="footer--top">
                 <section class="nav__brand footer--brand">
@@ -254,7 +348,7 @@
                 </section>
             </div>
             <div class="footer--bottom">
-                <span class="footer--copyight">©2021 CRAPPO. All rights reserved | This template is made with  by Alabi Khalid</span>
+                <span class="footer--copyight">©2022 AUCTION. All rights reserved | This template is made with  by Alabi Khalid</span>
             </div>
         </footer>
     </div>

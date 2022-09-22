@@ -4,6 +4,24 @@
     font-size: 1.5rem;
 }
 
+.section {
+    &__title {
+        color: $color-orange;
+        font-size: 1.2rem;
+        letter-spacing: .3rem;
+    }
+
+    &__header {
+        font-weight: lighter;
+        font-size: 3rem;
+    }
+
+    &__span {
+        font-weight: 700;
+        font-size: 3rem;
+    }
+}
+
 
 
 li {

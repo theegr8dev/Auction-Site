@@ -1,22 +1,7 @@
 .auction {
-    // border: 1px solid red;
+    padding-block: 10rem;
 
-    @media screen and (max-width:$xl) {
-        width: 1000px;
-    }
 
-    @media screen and (max-width:$l) {
-        width: 700px;
-    }
-
-    @media screen and (max-width:$m) {
-        width: 500px;
-    }
-
-    @media screen and (max-width:$s) {
-        width: 100%;
-        padding-inline: 2rem;
-    }
 
     &--header {
         text-align: center;
@@ -26,6 +11,7 @@
         display: grid;
         grid-template-columns: repeat(4, minmax(25rem, 1fr));
         gap: 5rem;
+        margin-block-start: 5rem;
 
         @media screen and (max-width:$xl) {
             grid-template-columns: repeat(4, minmax(20rem, 1fr));

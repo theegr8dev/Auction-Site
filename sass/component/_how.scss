@@ -1,0 +1,75 @@
+.how {
+    position: relative;
+    left: 0;
+    bottom: -100vh;
+    padding-block-end: 10rem;
+
+    &-section {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+        padding-block-start: 5rem;
+
+        @media screen and (max-width:$xl) {
+            justify-content: space-between;
+        }
+    }
+}
+
+.step {
+    width: 27rem;
+
+    @media screen and (max-width:$xl) {
+        width: 45rem;
+    }
+
+    @media screen and (max-width:$l) {
+        width: 35rem;
+    }
+
+
+    @media screen and (max-width:$m) {
+        width: 100%;
+    }
+
+    &--top {
+        display: flex;
+        align-items: center;
+    }
+
+    &--right-icon {
+        width: 2rem;
+        height: 2rem;
+        margin-inline-start: 10.5rem;
+
+        @media screen and (max-width:$xl) {
+            margin-inline-start: auto;
+        }
+    }
+
+    &--icon {
+        width: 3rem;
+        height: 3rem;
+        display: block;
+        margin: auto;
+        fill: whitesmoke;
+
+    }
+
+    &--icon-container {
+        width: 8rem;
+        height: 8rem;
+        border-radius: 50%;
+        padding: 1.2rem;
+        background-color: $color-orange;
+        display: flex;
+    }
+
+    &--header {
+        margin-block: 2rem;
+    }
+
+    &--paragraph {
+        opacity: 0.4;
+    }
+}
