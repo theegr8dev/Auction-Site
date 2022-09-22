@@ -47,23 +47,7 @@
         }
     }
 
-    &--icon {
-        width: 3rem;
-        height: 3rem;
-        display: block;
-        margin: auto;
-        fill: whitesmoke;
 
-    }
-
-    &--icon-container {
-        width: 8rem;
-        height: 8rem;
-        border-radius: 50%;
-        padding: 1.2rem;
-        background-color: $color-orange;
-        display: flex;
-    }
 
     &--header {
         margin-block: 2rem;

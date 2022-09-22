@@ -45,7 +45,8 @@ body {
 }
 
 #section2,
-#section3 {
+#section3,
+#section4 {
   color: black;
   position: relative;
   left: 0;
@@ -55,25 +56,29 @@ body {
 }
 @media screen and (max-width: 75em) {
   #section2,
-#section3 {
+#section3,
+#section4 {
     width: 1000px;
   }
 }
 @media screen and (max-width: 64em) {
   #section2,
-#section3 {
+#section3,
+#section4 {
     width: 750px;
   }
 }
 @media screen and (max-width: 48em) {
   #section2,
-#section3 {
+#section3,
+#section4 {
     width: 500px;
   }
 }
 @media screen and (max-width: 40em) {
   #section2,
-#section3 {
+#section3,
+#section4 {
     width: 100%;
     padding-inline: 2rem;
   }
@@ -111,7 +116,7 @@ h4 {
 }
 
 p {
-  font-size: 2.6rem;
+  font-size: 1.6rem;
 }
 
 span {
@@ -136,6 +141,22 @@ span {
 .section__span {
   font-weight: 700;
   font-size: 3rem;
+}
+
+.icon--container {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  padding: 1.2rem;
+  background-color: #f37121;
+  display: flex;
+}
+.icon--icon {
+  width: 3rem;
+  height: 3rem;
+  display: block;
+  margin: auto;
+  fill: whitesmoke;
 }
 
 li {
@@ -323,6 +344,68 @@ button {
   text-decoration: underline;
   display: block;
   margin-block-start: 2rem;
+}
+
+.about {
+  display: flex;
+  gap: 5rem;
+  align-items: center;
+  padding-block-end: 10rem;
+}
+@media screen and (max-width: 64em) {
+  .about {
+    gap: 0;
+    align-items: initial;
+    flex-direction: column;
+  }
+}
+.about--img {
+  width: 65rem;
+}
+@media screen and (max-width: 64em) {
+  .about--img {
+    width: 100%;
+  }
+}
+.about--img img {
+  width: 100%;
+}
+.about--content__container {
+  width: 50rem;
+}
+@media screen and (max-width: 64em) {
+  .about--content__container {
+    width: 100%;
+  }
+}
+.about--info__container {
+  margin-block-start: 5rem;
+}
+.about--info {
+  display: flex;
+  gap: 1rem;
+}
+.about--info:not(:first-child) {
+  margin-block-start: 3rem;
+}
+.about--icon {
+  width: 4rem;
+  height: 4rem;
+}
+.about--content__header {
+  color: #f37121;
+  font-weight: 400;
+}
+.about--content__paragraph {
+  color: black;
+  opacity: 0.6;
+  font-weight: 300;
+  width: 35rem;
+}
+@media screen and (max-width: 64em) {
+  .about--content__paragraph {
+    width: 100%;
+  }
 }
 
 .toggle {
@@ -528,21 +611,6 @@ button {
   .step--right-icon {
     margin-inline-start: auto;
   }
-}
-.step--icon {
-  width: 3rem;
-  height: 3rem;
-  display: block;
-  margin: auto;
-  fill: whitesmoke;
-}
-.step--icon-container {
-  width: 8rem;
-  height: 8rem;
-  border-radius: 50%;
-  padding: 1.2rem;
-  background-color: #f37121;
-  display: flex;
 }
 .step--header {
   margin-block: 2rem;
