@@ -1,0 +1,115 @@
+.testimonial {
+    background: url('../../assets/header_bg.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    position: relative;
+    left: 0;
+    bottom: -100vh;
+    z-index: 2;
+
+    &::after {
+        content: '  ';
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        background: #f37221de;
+
+    }
+
+    &--container {
+        padding-block: 10rem;
+        color: white;
+        position: inherit;
+        z-index: 1;
+
+    }
+
+    &--header {
+        text-align: center;
+        z-index: -200;
+
+        &__title {
+            color: white;
+        }
+    }
+
+}
+
+.client {
+    display: flex;
+    gap: 10rem;
+    margin-block-start: 5rem;
+    z-index: 100;
+
+    @media screen and (max-width:$l) {
+        gap: 2rem;
+    }
+
+
+
+
+    &--info {
+        width: 60rem;
+
+        @media screen and (max-width:$m) {
+            width: 100%;
+        }
+
+        @media screen and (max-width:$m) {
+            &__2 {
+                display: none;
+            }
+        }
+
+    }
+
+    &--profile {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+
+        img {
+            width: 5rem;
+            height: 5rem;
+            border-radius: 50%;
+        }
+    }
+
+    &--paragraph {
+        line-height: 4rem;
+        margin-block-start: 2rem;
+        word-spacing: .5rem;
+
+        @media screen and (max-width:$l) {
+            width: 100%;
+        }
+    }
+}
+
+
+
+.slider {
+    margin-inline: auto;
+    margin-block-start: 2rem;
+    display: flex;
+    justify-content: center;
+
+    &>*:not(:first-child) {
+        margin-inline-start: 2rem;
+    }
+
+    &>* {
+        width: 2rem;
+        height: .3rem;
+        background-color: rgba(0, 0, 0, 0.504);
+
+        &:hover {
+            background-color: white;
+
+        }
+    }
+
+
+}

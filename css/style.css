@@ -9,6 +9,7 @@
 html {
   font-size: 62.5%;
   height: 100%;
+  overflow-x: hidden;
 }
 
 body {
@@ -79,6 +80,32 @@ body {
   #section2,
 #section3,
 #section4 {
+    width: 100%;
+    padding-inline: 2rem;
+  }
+}
+
+#section5 {
+  width: 1200px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 75em) {
+  #section5 {
+    width: 1000px;
+  }
+}
+@media screen and (max-width: 64em) {
+  #section5 {
+    width: 750px;
+  }
+}
+@media screen and (max-width: 48em) {
+  #section5 {
+    width: 500px;
+  }
+}
+@media screen and (max-width: 40em) {
+  #section5 {
     width: 100%;
     padding-inline: 2rem;
   }
@@ -617,6 +644,101 @@ button {
 }
 .step--paragraph {
   opacity: 0.4;
+}
+
+.testimonial {
+  background: url("../../assets/header_bg.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  position: relative;
+  left: 0;
+  bottom: -100vh;
+  z-index: 2;
+}
+.testimonial::after {
+  content: "  ";
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(243, 114, 33, 0.8705882353);
+}
+.testimonial--container {
+  padding-block: 10rem;
+  color: white;
+  position: inherit;
+  z-index: 1;
+}
+.testimonial--header {
+  text-align: center;
+  z-index: -200;
+}
+.testimonial--header__title {
+  color: white;
+}
+
+.client {
+  display: flex;
+  gap: 10rem;
+  margin-block-start: 5rem;
+  z-index: 100;
+}
+@media screen and (max-width: 64em) {
+  .client {
+    gap: 2rem;
+  }
+}
+.client--info {
+  width: 60rem;
+}
+@media screen and (max-width: 48em) {
+  .client--info {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 48em) {
+  .client--info__2 {
+    display: none;
+  }
+}
+.client--profile {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.client--profile img {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+}
+.client--paragraph {
+  line-height: 4rem;
+  margin-block-start: 2rem;
+  word-spacing: 0.5rem;
+}
+@media screen and (max-width: 64em) {
+  .client--paragraph {
+    width: 100%;
+  }
+}
+
+.slider {
+  margin-inline: auto;
+  margin-block-start: 2rem;
+  display: flex;
+  justify-content: center;
+}
+.slider > *:not(:first-child) {
+  margin-inline-start: 2rem;
+}
+.slider > * {
+  width: 2rem;
+  height: 0.3rem;
+  background-color: rgba(0, 0, 0, 0.504);
+}
+.slider > *:hover {
+  background-color: white;
 }
 
 /*# sourceMappingURL=style.css.map */
