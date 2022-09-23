@@ -50,7 +50,9 @@ body {
 #section6,
 #section-blog,
 #section-buyers,
-.navigator {
+#team--section,
+.navigator,
+.section-contact {
   color: black;
   position: relative;
   left: 0;
@@ -65,7 +67,9 @@ body {
 #section6,
 #section-blog,
 #section-buyers,
-.navigator {
+#team--section,
+.navigator,
+.section-contact {
     width: 1000px;
   }
 }
@@ -76,7 +80,9 @@ body {
 #section6,
 #section-blog,
 #section-buyers,
-.navigator {
+#team--section,
+.navigator,
+.section-contact {
     width: 750px;
   }
 }
@@ -87,7 +93,9 @@ body {
 #section6,
 #section-blog,
 #section-buyers,
-.navigator {
+#team--section,
+.navigator,
+.section-contact {
     width: 500px;
   }
 }
@@ -98,7 +106,9 @@ body {
 #section6,
 #section-blog,
 #section-buyers,
-.navigator {
+#team--section,
+.navigator,
+.section-contact {
     width: 100%;
     padding-inline: 2rem;
   }
@@ -193,6 +203,7 @@ span {
   color: #ffffff;
   background: #f37121;
   font-size: 1.5rem;
+  cursor: pointer;
 }
 
 .section__title {
@@ -236,6 +247,10 @@ a {
 button {
   border: none;
   background: none;
+}
+
+.pt {
+  padding-block-start: 5rem;
 }
 
 .nav {
@@ -472,6 +487,117 @@ button {
   .about--content__paragraph {
     width: 100%;
   }
+}
+
+.contact {
+  display: flex;
+  gap: 10rem;
+  padding-block: 5rem;
+}
+@media screen and (max-width: 64em) {
+  .contact {
+    flex-direction: column;
+  }
+}
+.contact--header {
+  padding-block-end: 5rem;
+}
+
+.form {
+  width: 60rem;
+}
+@media screen and (max-width: 64em) {
+  .form {
+    width: 100%;
+  }
+}
+.form--container {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(10rem, 1fr));
+  row-gap: 2rem;
+  column-gap: 5rem;
+}
+@media screen and (max-width: 64em) {
+  .form--container {
+    width: 100%;
+    display: block;
+  }
+}
+.form--box {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (max-width: 64em) {
+  .form--box > *:not(:first-child) {
+    margin-block-end: 3rem;
+  }
+}
+.form--btn {
+  margin-block-start: 2rem;
+  padding: 2rem 4rem;
+  font-size: 1.5rem;
+}
+
+label {
+  font-size: 1.6rem;
+  margin-block-end: 1rem;
+}
+
+input {
+  height: 5rem;
+  padding: 2rem;
+  border: none;
+  border: 1px solid black;
+  font-size: 1.5rem;
+  color: #f37121;
+}
+
+textarea {
+  width: 100%;
+  margin-block-start: 1rem;
+  border: none;
+  border: 1px solid black;
+}
+
+.message {
+  margin-block-start: 2rem;
+}
+
+.info > *:not(:first-child) {
+  margin-block-start: 3rem;
+}
+
+.team--header {
+  text-align: center;
+}
+.team--grid {
+  margin-block-start: 2rem;
+}
+.team--grid > * {
+  margin-block-end: 7rem;
+}
+.team--box {
+  box-shadow: 0 0px 1px black;
+  text-align: center;
+  position: relative;
+}
+.team--box img {
+  position: relative;
+  top: -50px;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+}
+.team--profile {
+  margin-block-end: 1rem;
+}
+.team--profile span {
+  font-weight: lighter;
+}
+.team--paragraph {
+  padding-inline: 2rem;
+  margin-block-end: 3rem;
+  font-weight: lighter;
 }
 
 .toggle {

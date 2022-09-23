@@ -1,0 +1,94 @@
+.contact {
+    display: flex;
+    gap: 10rem;
+    padding-block: 5rem;
+
+    @media screen and (max-width:$l) {
+        flex-direction: column;
+    }
+
+    &--header {
+        padding-block-end: 5rem;
+    }
+
+
+}
+
+.form {
+    width: 60rem;
+
+    @media screen and (max-width:$l) {
+        width: 100%;
+    }
+
+
+
+    &--container {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(10rem, 1fr));
+        row-gap: 2rem;
+        column-gap: 5rem;
+
+        @media screen and (max-width:$l) {
+            width: 100%;
+            display: block;
+
+        }
+
+    }
+
+    &--box {
+        display: flex;
+        flex-direction: column;
+
+        &>*:not(:first-child) {
+            @media screen and (max-width:$l) {
+                margin-block-end: 3rem;
+            }
+
+        }
+
+    }
+
+    &--btn {
+        margin-block-start: 2rem;
+        padding: 2rem 4rem;
+        font-size: 1.5rem;
+    }
+}
+
+label {
+    font-size: 1.6rem;
+    margin-block-end: 1rem;
+
+}
+
+input {
+    height: 5rem;
+    padding: 2rem;
+    border: none;
+    border: 1px solid black;
+    font-size: 1.5rem;
+    color: $color-orange;
+}
+
+textarea {
+    width: 100%;
+    margin-block-start: 1rem;
+    border: none;
+    border: 1px solid black;
+
+
+}
+
+.message {
+    margin-block-start: 2rem;
+}
+
+.info {
+    &>*:not(:first-child) {
+        margin-block-start: 3rem;
+
+    }
+
+}

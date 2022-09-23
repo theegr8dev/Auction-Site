@@ -1,0 +1,42 @@
+.team {
+
+    &--header {
+        text-align: center;
+    }
+
+    &--grid {
+        margin-block-start: 2rem;
+
+        &>* {
+            margin-block-end: 7rem;
+        }
+    }
+
+    &--box {
+        box-shadow: 0 0px 1px black;
+        text-align: center;
+        position: relative;
+
+        img {
+            position: relative;
+            top: -50px;
+            width: 10rem;
+            height: 10rem;
+            border-radius: 50%;
+        }
+    }
+
+    &--profile {
+        margin-block-end: 1rem;
+
+        span {
+            font-weight: lighter;
+        }
+    }
+
+    &--paragraph {
+        padding-inline: 2rem;
+        margin-block-end: 3rem;
+        font-weight: lighter;
+    }
+}
