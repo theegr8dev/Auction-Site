@@ -9,7 +9,6 @@
 html {
   font-size: 62.5%;
   height: 100%;
-  overflow-x: hidden;
 }
 
 body {
@@ -47,39 +46,54 @@ body {
 
 #section2,
 #section3,
-#section4 {
+#section4,
+#section6,
+#section-blog,
+.navigator {
   color: black;
   position: relative;
   left: 0;
   bottom: -100vh;
   width: 1200px;
-  margin: 0 auto;
+  margin-inline: auto;
 }
 @media screen and (max-width: 75em) {
   #section2,
 #section3,
-#section4 {
+#section4,
+#section6,
+#section-blog,
+.navigator {
     width: 1000px;
   }
 }
 @media screen and (max-width: 64em) {
   #section2,
 #section3,
-#section4 {
+#section4,
+#section6,
+#section-blog,
+.navigator {
     width: 750px;
   }
 }
 @media screen and (max-width: 48em) {
   #section2,
 #section3,
-#section4 {
+#section4,
+#section6,
+#section-blog,
+.navigator {
     width: 500px;
   }
 }
 @media screen and (max-width: 40em) {
   #section2,
 #section3,
-#section4 {
+#section4,
+#section6,
+#section-blog,
+.navigator {
     width: 100%;
     padding-inline: 2rem;
   }
@@ -109,6 +123,26 @@ body {
     width: 100%;
     padding-inline: 2rem;
   }
+}
+
+.bid {
+  text-align: center;
+  padding-block: 5rem;
+}
+.bid--text {
+  width: 50%;
+  margin-inline: auto;
+  font-size: 3.7rem;
+  font-weight: lighter;
+}
+@media screen and (max-width: 64em) {
+  .bid--text {
+    width: 100%;
+  }
+}
+.bid--btn {
+  margin-block-start: 2rem;
+  padding: 2rem 3rem;
 }
 
 h1 {
@@ -739,6 +773,90 @@ button {
 }
 .slider > *:hover {
   background-color: white;
+}
+
+.blog {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(35rem, 1fr));
+  gap: 3rem;
+  padding-block: 7rem 5rem;
+}
+@media screen and (max-width: 75em) {
+  .blog {
+    grid-template-columns: repeat(3, minmax(30rem, 1fr));
+    gap: 2rem;
+  }
+}
+@media screen and (max-width: 64em) {
+  .blog {
+    grid-template-columns: repeat(3, minmax(20rem, 1fr));
+    gap: 2rem;
+  }
+}
+@media screen and (max-width: 48em) {
+  .blog {
+    grid-template-columns: repeat(2, minmax(20rem, 1fr));
+  }
+}
+@media screen and (max-width: 40em) {
+  .blog {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.blog--box {
+  position: relative;
+}
+.blog--box img {
+  width: 100%;
+}
+.blog--date {
+  position: absolute;
+  top: 0;
+  background-color: white;
+  color: #f37121;
+  height: 6rem;
+  width: 10rem;
+  border: 2px solid #f37121;
+  display: flex;
+  flex-direction: column;
+}
+.blog--date > * {
+  font-size: 2rem;
+  align-self: center;
+}
+.blog--content__head {
+  padding-block: 1.5rem 2rem;
+  width: 90%;
+}
+.blog--content__sm {
+  font-weight: lighter;
+}
+.blog--content__sm-color {
+  color: #f37121;
+}
+.blog--content__paragraph {
+  font-weight: lighter;
+}
+
+.navigator {
+  padding-block-end: 5rem;
+  display: flex;
+  gap: 0.3rem;
+  align-content: center;
+  text-align: center;
+  align-items: center;
+}
+.navigator > * {
+  background-color: rgba(243, 114, 33, 0.1490196078);
+  color: #f37121;
+  padding: 1rem 1.5rem;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+.navigator--3 {
+  background-color: #f37121;
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */

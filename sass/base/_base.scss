@@ -9,7 +9,7 @@
 html {
     font-size: 62.5%;
     height: 100%;
-    overflow-x: hidden;
+    // overflow-x: hidden;
 }
 
 body {
@@ -65,13 +65,16 @@ body {
 
 #section2,
 #section3,
-#section4 {
+#section4,
+#section6,
+#section-blog,
+.navigator {
     color: black;
     position: relative;
     left: 0;
     bottom: -100vh;
     width: 1200px;
-    margin: 0 auto;
+    margin-inline: auto;
 
     @media screen and (max-width:$xl) {
         width: 1000px;
@@ -110,5 +113,26 @@ body {
     @media screen and (max-width:$s) {
         width: 100%;
         padding-inline: 2rem;
+    }
+}
+
+.bid {
+    text-align: center;
+    padding-block: 5rem;
+
+    &--text {
+        width: 50%;
+        margin-inline: auto;
+        font-size: 3.7rem;
+        font-weight: lighter;
+
+        @media screen and (max-width:$l) {
+            width: 100%;
+        }
+    }
+
+    &--btn {
+        margin-block-start: 2rem;
+        padding: 2rem 3rem;
     }
 }

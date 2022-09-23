@@ -1,0 +1,102 @@
+.blog {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(35rem, 1fr));
+    gap: 3rem;
+    padding-block: 7rem 5rem;
+
+    @media screen and (max-width:$xl) {
+        grid-template-columns: repeat(3, minmax(30rem, 1fr));
+        gap: 2rem;
+    }
+
+    @media screen and (max-width:$l) {
+        grid-template-columns: repeat(3, minmax(20rem, 1fr));
+
+        gap: 2rem;
+    }
+
+    @media screen and (max-width:$m) {
+        grid-template-columns: repeat(2, minmax(20rem, 1fr));
+    }
+
+    @media screen and (max-width:$s) {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+
+    &--box {
+        position: relative;
+
+        img {
+            width: 100%;
+            // height: auto;
+        }
+    }
+
+    &--date {
+        position: absolute;
+        top: 0;
+        background-color: white;
+        color: $color-orange;
+        height: 6rem;
+        width: 10rem;
+        border: 2px solid $color-orange;
+        display: flex;
+        flex-direction: column;
+
+
+
+        &>* {
+            font-size: 2rem;
+            align-self: center;
+        }
+
+
+    }
+
+    &--content {
+        &__head {
+            padding-block: 1.5rem 2rem;
+            width: 90%;
+        }
+
+        &__sm {
+            font-weight: lighter;
+
+            &-color {
+                color: $color-orange;
+            }
+        }
+
+        &__paragraph {
+            font-weight: lighter;
+        }
+    }
+
+
+}
+
+.navigator {
+    padding-block-end: 5rem;
+    display: flex;
+    gap: .3rem;
+    align-content: center;
+    text-align: center;
+    align-items: center;
+
+    &>* {
+        background-color: #f3722126;
+        color: $color-orange;
+        padding: 1rem 1.5rem;
+        border-radius: 50%;
+        font-size: 1.5rem;
+        font-weight: bolder;
+
+    }
+
+    &--3 {
+        background-color: $color-orange;
+        color: white;
+    }
+
+}
