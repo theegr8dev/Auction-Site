@@ -560,35 +560,41 @@ button {
 .auction--header {
   text-align: center;
 }
-.auction--grid {
+.auction--grid,
+.auction .how--grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(25rem, 1fr));
   gap: 5rem;
   margin-block-start: 5rem;
 }
 @media screen and (max-width: 75em) {
-  .auction--grid {
+  .auction--grid,
+.auction .how--grid {
     grid-template-columns: repeat(4, minmax(20rem, 1fr));
     gap: 2rem;
   }
 }
 @media screen and (max-width: 64em) {
-  .auction--grid {
+  .auction--grid,
+.auction .how--grid {
     grid-template-columns: repeat(3, minmax(20rem, 1fr));
     gap: 2rem;
   }
 }
 @media screen and (max-width: 48em) {
-  .auction--grid {
+  .auction--grid,
+.auction .how--grid {
     grid-template-columns: repeat(2, minmax(20rem, 1fr));
   }
 }
 @media screen and (max-width: 40em) {
-  .auction--grid {
+  .auction--grid,
+.auction .how--grid {
     grid-template-columns: repeat(1, 1fr);
   }
 }
-.auction--grid img {
+.auction--grid img,
+.auction .how--grid img {
   width: 100%;
 }
 .auction--product {
@@ -666,7 +672,6 @@ button {
 }
 .step--top {
   display: flex;
-  align-items: center;
 }
 .step--right-icon {
   width: 2rem;
