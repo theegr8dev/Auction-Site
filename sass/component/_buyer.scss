@@ -1,0 +1,99 @@
+.buyers {
+    display: flex;
+    gap: 5rem;
+    padding-block-start: 10rem;
+
+    @media screen and (max-width:$m) {
+        flex-direction: column;
+    }
+}
+
+.cta {
+    width: 25rem;
+
+    &>* {
+        box-shadow: 0px 0px 1px black;
+        padding: 2rem 1rem;
+    }
+
+    @media screen and (max-width:$m) {
+        width: 100%;
+    }
+
+    &--bidders {
+        margin-block-start: 4rem;
+    }
+}
+
+
+.category {
+    &--item {
+        display: flex;
+        justify-content: space-between;
+        margin-block-start: 1.5rem;
+        font-weight: 300;
+
+        &__name {
+            font-weight: 400;
+        }
+
+        &__quantity {}
+    }
+}
+
+.bidder {
+    &--item {
+        display: flex;
+        align-items: center;
+        margin-block-start: 1.5rem;
+
+
+        img {
+            width: 4rem;
+            height: 4rem;
+            border-radius: 50%;
+        }
+    }
+
+    &--info {
+        margin-inline-start: .9rem;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+
+        &__name {
+            font-weight: lighter;
+        }
+
+    }
+}
+
+.product {
+    &--grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(25rem, 30rem));
+        gap: 5rem;
+
+        @media screen and (max-width:$xl) {
+            grid-template-columns: repeat(3, minmax(20rem, 30rem));
+            gap: 2rem;
+        }
+
+        @media screen and (max-width:$l) {
+            grid-template-columns: repeat(2, minmax(18rem, 30rem));
+            gap: 2rem;
+        }
+
+        @media screen and (max-width:$m) {
+            grid-template-columns: repeat(2, minmax(20rem, 1fr));
+        }
+
+        @media screen and (max-width:$s) {
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+}

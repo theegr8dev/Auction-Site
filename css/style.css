@@ -49,6 +49,7 @@ body {
 #section4,
 #section6,
 #section-blog,
+#section-buyers,
 .navigator {
   color: black;
   position: relative;
@@ -63,6 +64,7 @@ body {
 #section4,
 #section6,
 #section-blog,
+#section-buyers,
 .navigator {
     width: 1000px;
   }
@@ -73,6 +75,7 @@ body {
 #section4,
 #section6,
 #section-blog,
+#section-buyers,
 .navigator {
     width: 750px;
   }
@@ -83,6 +86,7 @@ body {
 #section4,
 #section6,
 #section-blog,
+#section-buyers,
 .navigator {
     width: 500px;
   }
@@ -93,6 +97,7 @@ body {
 #section4,
 #section6,
 #section-blog,
+#section-buyers,
 .navigator {
     width: 100%;
     padding-inline: 2rem;
@@ -857,6 +862,93 @@ button {
 .navigator--3 {
   background-color: #f37121;
   color: white;
+}
+
+.buyers {
+  display: flex;
+  gap: 5rem;
+  padding-block-start: 10rem;
+}
+@media screen and (max-width: 48em) {
+  .buyers {
+    flex-direction: column;
+  }
+}
+
+.cta {
+  width: 25rem;
+}
+.cta > * {
+  box-shadow: 0px 0px 1px black;
+  padding: 2rem 1rem;
+}
+@media screen and (max-width: 48em) {
+  .cta {
+    width: 100%;
+  }
+}
+.cta--bidders {
+  margin-block-start: 4rem;
+}
+
+.category--item {
+  display: flex;
+  justify-content: space-between;
+  margin-block-start: 1.5rem;
+  font-weight: 300;
+}
+.category--item__name {
+  font-weight: 400;
+}
+.bidder--item {
+  display: flex;
+  align-items: center;
+  margin-block-start: 1.5rem;
+}
+.bidder--item img {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+}
+.bidder--info {
+  margin-inline-start: 0.9rem;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.bidder--info__name {
+  font-weight: lighter;
+}
+
+.product--grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(25rem, 30rem));
+  gap: 5rem;
+}
+@media screen and (max-width: 75em) {
+  .product--grid {
+    grid-template-columns: repeat(3, minmax(20rem, 30rem));
+    gap: 2rem;
+  }
+}
+@media screen and (max-width: 64em) {
+  .product--grid {
+    grid-template-columns: repeat(2, minmax(18rem, 30rem));
+    gap: 2rem;
+  }
+}
+@media screen and (max-width: 48em) {
+  .product--grid {
+    grid-template-columns: repeat(2, minmax(20rem, 1fr));
+  }
+}
+@media screen and (max-width: 40em) {
+  .product--grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.product--grid img {
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */
